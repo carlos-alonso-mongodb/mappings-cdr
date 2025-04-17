@@ -1,0 +1,221 @@
+{
+    "CC.problem_list.v2": {
+      "skip_mapping": false,
+      "clear_mapping": false,
+      "template_version": "1",
+      "snv": 1,
+      "force_update": true,
+      "mappings": [
+        {
+          "archetype_node_id": "EE.adverse_reaction_risk.v2",
+          "ancestors": [],
+          "createAncestorsArray": "false",
+          "data": [
+            "/T",
+            "/ani"
+          ]
+        },
+        {
+          "archetype_node_id": "at0002",
+          "ancestors": [
+            "EE.adverse_reaction_risk.v2",
+            "at0001"
+          ],
+          "createAncestorsArray": "true",
+          "data": [
+            "/T",
+            "/ani",
+            "/v/v"
+          ]
+        },
+        {
+          "archetype_node_id": "at0101",
+          "ancestors": [
+            "EE.adverse_reaction_risk.v2",
+            "at0001"
+          ],
+          "createAncestorsArray": "true",
+          "data": [
+            "/T",
+            "/ani",
+            "/v/df/cs"
+          ]
+        }
+      ]
+    },
+    "CC.vaccination_list.v0": {
+      "skip_mapping": true,
+      "template_version": "1",
+      "snv": 1,
+      "mappings": [
+        {
+          "archetype_node_id": "SS.immunisation_list.v0",
+          "ancestors": [],
+          "createAncestorsArray": "false",
+          "data": [
+            "/T",
+            "/ani"
+          ]
+        },
+        {
+          "archetype_node_id": "KK.admin_salut.v0",
+          "ancestors": [],
+          "createAncestorsArray": "false",
+          "data": [
+            "/T",
+            "/ani",
+            "/items[at0007]/items[at0014]/value/defining_code/code_string"
+          ]
+        },
+        {
+          "archetype_node_id": "AA.medication.v1",
+          "ancestors": [],
+          "createAncestorsArray": "true",
+          "data": [
+            "/T",
+            "/ani",
+            "/time",
+            "/op/pf/ids/id"
+          ]
+        }
+      ]
+    },
+    "CC.report-result.v1": {
+        "skip_mapping": false,
+        "clear_mapping": false,
+        "template_version": "1",
+        "snv": 1,
+        "force_update": true,
+        "mappings": [
+          {
+            "archetype_node_id": "CC.report-result.v1",
+            "ancestors": [],
+            "createAncestorsArray": "false",
+            "data": [
+              "/T",        
+              "/ani" 
+            ]
+          },
+          {
+            "archetype_node_id": "*",
+            "ancestors": [ "CC.report-result.v1" ],
+            "exactAncestorsMatch": true,
+            "node_type": "J",
+            "createAncestorsArray": "false",
+            "data": [ "st/v" ]
+          },
+          {
+            "archetype_node_id": "CC.report-result.v1",
+            "ancestors": [
+                "CC.report-result.v1"
+            ],
+            "createAncestorsArray": "false",
+            "data": [
+              "/T",        
+              "/ani"       
+            ]
+          },
+          {
+            "archetype_node_id": "OO.laboratory_test_result.v1",
+            "ancestors": [
+                "CC.report-result.v1"
+            ],
+            "createAncestorsArray": "false",
+            "data": [
+              "/T",      
+              "/ani"     
+            ]
+          },
+          {
+            "archetype_node_id": "at0001",
+            "ancestors": [
+                "CC.report-result.v1",
+                "SS.diagnostic_reports.v0",
+                "OO.laboratory_test_result.v1"
+              ],
+            "createAncestorsArray": "true",
+            "data": [
+              "/T",           
+              "/ani",         
+              "/origin/v"     
+            ]
+          },
+          {
+            "archetype_node_id": "at0024",
+            "ancestors": [
+              "CC.report-result.v1",
+              "SS.diagnostic_reports.v0",
+              "OO.laboratory_test_result.v1",
+              "at0001",
+              "at0002",
+              "at0003",
+              "KK.laboratory_test_analyte.v1"
+            ],
+            "createAncestorsArray": "true",
+            "data": [
+              "/T",
+              "/ani",
+              "/v/df/cs",       
+              "/v/df/tid/v"     
+            ]
+          },
+          {
+            "archetype_node_id": "at0001",
+            "ancestors": [
+              "CC.report-result.v1",
+              "at0001",
+              "KK.admin_salut.v0"
+            ],
+            "createAncestorsArray": "true",
+            "data": [
+              "/ani",
+              "/v"  
+            ]
+          },
+          {
+            "archetype_node_id": "at0016",
+            "ancestors": [
+              "CC.report-result.v1",
+              "at0001",
+              "KK.admin_salut.v0",
+              "at0007"
+            ],
+            "createAncestorsArray": "true",
+            "data": [
+              "/T",
+              "/ani",
+              "/v/df/cs"  
+            ]
+          },
+          {
+            "archetype_node_id": "at0011",
+            "ancestors": [
+              "CC.report-result.v1",
+              "at0001",
+              "KK.admin_salut.v0",
+              "at0005"
+            ],
+            "createAncestorsArray": "true",
+            "data": [
+              "/ani",
+              "/v/df/cs"  
+            ]
+          },
+          {
+            "archetype_node_id": "at0001",
+            "ancestors": [
+              "OO.laboratory_test_result.v1",
+              "at0001",
+              "at0002",
+              "at0003",
+              "KK.laboratory_test_analyte.v1"
+            ],
+            "createAncestorsArray": "true",
+            "data": [
+              "/ani",
+              "/v/v"  
+            ]
+          }
+        ]
+      }
+  }

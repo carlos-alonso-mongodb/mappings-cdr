@@ -1,0 +1,6 @@
+{
+    "connection_string": "mongodb+srv://francesc:francesc@basicinitialtests.0asff.mongodb.net/?retryWrites=true&w=1",
+    "db_name": "CatSalutCDR",
+    "collection_name": "sampleData",
+    "batch_size": 10000
+}
